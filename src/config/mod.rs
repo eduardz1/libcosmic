@@ -53,6 +53,12 @@ pub fn icon_theme() -> String {
     COSMIC_TK.read().unwrap().icon_theme.clone()
 }
 
+/// Preferred cursor theme.
+#[allow(clippy::missing_panics_doc)]
+pub fn cursor_theme() -> String {
+    COSMIC_TK.read().unwrap().icon_theme.clone()
+}
+
 /// Density of CSD/SSD header bars.
 #[allow(clippy::missing_panics_doc)]
 pub fn header_size() -> Density {
