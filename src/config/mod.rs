@@ -96,6 +96,9 @@ pub struct CosmicTk {
     /// Preferred icon theme.
     pub icon_theme: String,
 
+    /// Preferred cursor theme.
+    pub cursor_theme: String,
+
     /// Density of CSD/SSD header bars.
     pub header_size: Density,
 
@@ -116,6 +119,7 @@ impl Default for CosmicTk {
             show_minimize: true,
             show_maximize: true,
             icon_theme: String::from("Cosmic"),
+            cursor_theme: String::from("Cosmic"),
             header_size: Density::Standard,
             interface_density: Density::Standard,
             interface_font: FontConfig {
